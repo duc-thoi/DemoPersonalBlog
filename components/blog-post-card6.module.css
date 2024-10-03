@@ -1,0 +1,110 @@
+.imageIcon {
+  align-self: stretch;
+  height: 228px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.author,
+.heading {
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+}
+.heading {
+  line-height: 28px;
+}
+.supportingText {
+  position: relative;
+  font-size: var(--text-md-medium-size);
+  line-height: 24px;
+  color: var(--color-silver);
+}
+.headingAndText,
+.headingAndText1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.headingAndText1 {
+  gap: var(--gap-5xs);
+  font-size: var(--text-lg-semibold-size);
+  color: var(--white);
+}
+.headingAndText {
+  gap: var(--gap-xs);
+}
+.text {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.badgeBase {
+  border-radius: var(--br-base);
+  background-color: var(--color-aliceblue-100);
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-11xs) var(--padding-3xs);
+}
+.badge,
+.badgeBase,
+.badgeBase1 {
+  display: flex;
+  flex-direction: row;
+}
+.badge {
+  align-items: flex-start;
+  justify-content: flex-start;
+  mix-blend-mode: lighten;
+}
+.badgeBase1 {
+  border-radius: var(--br-base);
+  background-color: var(--pink-50);
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-11xs) var(--padding-3xs);
+}
+.badge1,
+.blogPostCard,
+.categories,
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.badge1 {
+  flex-direction: row;
+  mix-blend-mode: lighten;
+  color: var(--pink-700);
+}
+.blogPostCard,
+.categories,
+.content {
+  align-self: stretch;
+}
+.categories {
+  flex-direction: row;
+  gap: var(--gap-5xs);
+  text-align: center;
+  color: var(--color-steelblue);
+}
+.blogPostCard,
+.content {
+  flex-direction: column;
+  gap: var(--gap-5xl);
+}
+.blogPostCard {
+  text-align: left;
+  font-size: var(--text-sm-medium-size);
+  color: var(--color-slateblue);
+  font-family: var(--text-sm-medium);
+}
+@media screen and (max-width: 450px) {
+  .categories {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,116 @@
+.arrowLeftIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.previousLabel {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.buttonBase {
+  gap: var(--gap-5xs);
+}
+.button,
+.buttonBase,
+.content,
+.nextPage {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content,
+.nextPage {
+  flex-direction: column;
+  padding: var(--padding-3xs) 0 0;
+}
+.content {
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-base);
+}
+.paginationNumberBase {
+  border-radius: var(--br-5xs);
+  background-color: var(--color-ghostwhite-200);
+  overflow: hidden;
+  color: var(--primary-600);
+}
+.content1,
+.paginationNumberBase,
+.paginationNumberBase1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content1 {
+  border-radius: var(--br-5xs);
+  padding: var(--padding-3xs) var(--padding-mini);
+}
+.paginationNumberBase1 {
+  overflow: hidden;
+}
+.content2,
+.content3,
+.paginationNumberBase1 {
+  border-radius: var(--br-5xs);
+}
+.content2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) var(--padding-sm) var(--padding-3xs)
+    var(--padding-mini);
+}
+.content3 {
+  padding: var(--padding-3xs) var(--padding-smi) var(--padding-3xs)
+    var(--padding-sm);
+}
+.content3,
+.content6,
+.paginationNumbers {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content6 {
+  border-radius: var(--br-5xs);
+  padding: var(--padding-3xs) var(--padding-2xs) var(--padding-3xs)
+    var(--padding-xs);
+}
+.paginationNumbers {
+  gap: var(--gap-11xs);
+  text-align: center;
+}
+.nextLabel {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 33px;
+}
+.pagination {
+  align-self: stretch;
+  border-top: 1px solid var(--color-whitesmoke-200);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-xl-5) 0 var(--padding-12xs-5);
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--text-sm-medium-size);
+  color: var(--gray-500);
+  font-family: var(--text-sm-medium);
+}
+@media screen and (max-width: 750px) {
+  .pagination {
+    flex-wrap: wrap;
+  }
+}
